@@ -1,0 +1,20 @@
+{
+    "name": "lian/printer",
+    "description": "365小票机",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shenyifei",
+            "email": "m809745357@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lian\\Printer\\": "./src/"
+        }
+    }
+}
