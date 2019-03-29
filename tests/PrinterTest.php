@@ -18,7 +18,7 @@ class PrinterTest extends TestCase
 {
     public function testAddOrder()
     {
-        $print = new Printer('66a2d', 'kdt2260799');
+        $print = new Printer('key', 'deviceNo');
 
         $response = $print->addOrder(Command::create()->paragraph('Hello World'));
 
@@ -28,7 +28,7 @@ class PrinterTest extends TestCase
 
     public function testQueryOrder()
     {
-        $print = new Printer('66a2d', 'kdt2260799');
+        $print = new Printer('key', 'deviceNo');
 
         $response = $print->queryOrder('12706113481553838974571');
 
@@ -38,7 +38,7 @@ class PrinterTest extends TestCase
 
     public function testQueryPrinterStatus()
     {
-        $print = new Printer('66a2d', 'kdt2260799');
+        $print = new Printer('key', 'deviceNo');
 
         $response = $print->queryPrinterStatus();
 
