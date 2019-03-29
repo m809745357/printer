@@ -12,6 +12,7 @@ $ composer require lian/printer -vvv
 ## Usage
 ```php
 use Lian\Printer\Printer;
+use Lian\Printer\Command;
 
 $print = new Printer('key', 'deviceNo');
 
