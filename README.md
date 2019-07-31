@@ -10,6 +10,7 @@ $ composer require lian/printer -vvv
 ```
 
 ## Usage
+
 ```php
 use Lian\Printer\Printer;
 use Lian\Printer\Command;
@@ -17,7 +18,9 @@ use Lian\Printer\Command;
 $print = new Printer('key', 'deviceNo');
 
 $response = $print->addOrder(Command::create()->paragraph('Hello World'));
+$response = $print->addOrder(Command::create()->paragraph('Hello World'));
 ```
+
 TODO
 
 ## Contributing

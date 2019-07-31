@@ -51,7 +51,7 @@ class Printer
             'key' => $this->key,
             'deviceNo' => $this->deviceNo,
             'printContent' => $content,
-            'times' => 1,
+            'times' => $time,
         ]);
 
         return $this->post('/addOrder', $query);
