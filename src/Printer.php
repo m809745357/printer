@@ -41,9 +41,10 @@ class Printer
      * {"responseCode":4,"msg":"错误的机器号或口令"}.
      *
      * @param Command $command
+     * @param int     $time
      * @param string  $format
      */
-    public function addOrder(Command $command, string $format = 'json')
+    public function addOrder(Command $command, int $time = 1, string $format = 'json')
     {
         $content = implode('', $command->contents);
 
